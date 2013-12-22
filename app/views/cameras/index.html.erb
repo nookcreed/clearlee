@@ -10,3 +10,9 @@
     <%= text_field_tag :auto_complete, nil, :placeholder => "Search for cameras" %>
     <%=  submit_tag 'submit' %>
  <% end %>
+
+<%=  form_tag('/cameras/search', method: :get) do %>
+<%= text_field_tag :price_start, nil, :placeholder => "Price starting" %>
+<%= text_field_tag :price_end, nil, :placeholder => "Price Ending" %>
+<%=  submit_tag 'submit' %>
+<% end %>

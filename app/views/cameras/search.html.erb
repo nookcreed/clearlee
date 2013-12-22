@@ -1,5 +1,6 @@
 <% @cameras.each do |c| %>
-    <%= "#{c.model_name}" + "," + "#{c.brand}" %>
+    <%= "#{c.model_name}" + "," + "#{c.brand}" + "," + "#{c.amzn_price}"%>
+    </br>
 <% end %>
 
 <%= will_paginate @cameras, :page_links => false, :class => 'digg_pagination' %>

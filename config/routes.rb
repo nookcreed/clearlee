@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :cameras do
     collection do
       get :search
+      get :search_by_range
       get :autocomplete_camera_model_name
     end
   end
