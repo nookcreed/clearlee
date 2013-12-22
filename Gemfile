@@ -54,6 +54,13 @@ gem 'mysql'
 #gem 'ransack', github: 'jonatack/ransack', ref: '0703144bb0ce2ea1884ef02b52bc51157152b566'
 #gem 'polyamorous', github: 'jonatack/polyamorous', ref: '062c78be2edadfe5fbb104fe68d213fcbeae478d'
 gem "jquery-rails", "2.0.2"
-gem 'rails3-jquery-autocomplete'
 gem 'jquery-ui-rails'
 gem 'twitter-typeahead-rails', :git => "git://github.com/yourabi/twitter-typeahead-rails.git"
+gem 'nokogiri'
+gem 'will_paginate', '~> 3.0'
+gem "compass-rails", "~> 1.1.2"
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+gem 'rails3-jquery-autocomplete'
+

@@ -8,9 +8,7 @@ class CamerasController < ApplicationController
   end
 
   def search
-    raise params.inspect
-    #cameras = Camera.search_on_model_name(params[:term], params[:category_id])
-    #render json: cameras.map(&:model_name)
+    @cameras = Camera.where("model_name like ?", "%#{params[:auto_complete]}%").paginate(:page => params[:page]).order('id DESC')
   end
 
   #def search
